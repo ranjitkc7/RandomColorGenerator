@@ -46,6 +46,7 @@ body {
 .mytext{
     border-left: 2px solid white;
     padding-left: 0.5rem;
+    color: white;
 }
 .content{
   display:flex;
