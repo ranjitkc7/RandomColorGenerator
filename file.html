@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <button onclick="alert('Welcome to Here')">Click Here</button>
+      <button onmouseover="alert('Again warmly welcome')">Show data</button>
+    </div>
+    <div>
+      <button id="btn2">For New</button>
+      <button class="btn3">For Other</button>
+    </div>
+    <div>
+      <button class="btn4">To Let</button>
+      <button class="btn5">For know</button>
+    </div>
+    <div class="Div2">
+      <div id="Circle"></div>
+      <button id="new-btn">Click Here</button>
+    </div>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: aquamarine;
+        align-items: center;
+        justify-content: center;
+      }
+      button {
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 16px;
+        font-weight: 900;
+        background-color: red;
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+
+      .Div2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #Circle {
+        width: 15rem;
+        height: 15rem;
+        background-color: blue;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        color: white;
+      }
+
+      #new-btn {
+        font-size: 2rem;
+        color: white;
+        background-color: green;
+        border: none;
+        border-radius: 16px;
+      }
+
+      .transection{
+        animation: myAnimation 2s;
+        translate: 30rem 0;
+      }
+
+      .trans2{
+        translate : -2rem -9rem;
+        scale:1.2;
+        transition: scale  1s linear;
+      }
+
+      @keyframes myAnimation {
+        0% {background-color: red;}
+        50% {background-color: yellow;}
+        100% {background-color: red;}
+      }
+
+      .trans3{
+        translate:0 0rem;
+        width: 15rem;
+        height: 15rem;
+        background-color: blue;
+        border-radius: 50%;
+      }
+    </style>
+    <script>
+      document.getElementById("btn2").onclick = function () {
+        alert("This is the first button");
+      };
+
+      document.querySelector(".btn3").onmouseout = function () {
+        alert("This is the second button");
+      };
+    </script>
+    <script>
+      const new1 = document.querySelector(".btn4");
+      const new2 = document.querySelector(".btn5");
+
+      new1.addEventListener("click", () => {
+        console.log("This is the third Button");
+        alert("This is the third button");
+      });
+
+      new2.addEventListener("mouseover", () => {
+        console.log("This is the fourth Button");
+        alert("This is the fourth button");
+      });
+    </script>
+    <script>
+      const myCir = document.getElementById("Circle");
+      const myBtn = document.getElementById("new-btn");
+      myBtn.addEventListener("click", () => {
+      myCir.style.backgroundColor = "gold";
+      myCir.textContent = "Hello World";
+      myCir.classList.add("transection");
+      });
+
+      myBtn.addEventListener("dblclick",()=>{
+      myCir.classList.add("trans2");
+      })
+
+      myCir.addEventListener("mouseover",()=>{
+      myCir.classList.add("trans3"); 
+      })
+      
+    </script>
+  </body>
+</html>

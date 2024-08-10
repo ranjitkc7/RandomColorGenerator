@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(to right, #ff7e5f, #239f2c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mysec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.mydiv1 {
+  display: flex;
+  gap: 2rem;
+}
+
+#button1 {
+  background-color: #f8312f;
+  color: white;
+  font-size: 1rem;
+  font-weight: 900;
+  border: none;
+  padding: 9px 1rem;
+  border-radius: 15px;
+}
+
+#button2 {
+  background-color: #10dd2e;
+  color: white;
+  font-size: 1rem;
+  font-weight: 900;
+  border: none;
+  padding: 9px 1rem;
+  border-radius: 15px;
+}
+.mytext{
+    border-left: 2px solid white;
+    padding-left: 0.5rem;
+}
+.content{
+  display:flex;
+  justify-content: space-between;
+  position: relative;
+  gap : 0.5rem;
+}
+
+.mydiv2{
+    border: 2px solid white;
+    padding:  1rem;
+    font-size: 22px;
+    border-radius: 12px;
+    background-color: rgb(243, 227, 246);
+}
+
+.Copy{
+  z-index: 10;
+  background-color: rgba(251, 232, 232, 0.5);
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(10, 10, 10, 0.899);
+  border: 1px solid rgb(248, 244, 244);
+  border-radius: 7px;
+  height: 2rem;
+  width: fit-content;
+  padding: 0.2rem;
+}
